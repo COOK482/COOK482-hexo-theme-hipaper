@@ -411,7 +411,7 @@ object {
 
 #main-navigation {
 	border: solid #333;
-	border-width: 1px 0 3px;
+	border-width: 0px 0 3px;
 	}
 #main-navigation li a {
 	padding: 0 20px;
