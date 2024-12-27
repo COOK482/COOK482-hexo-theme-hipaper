@@ -3,13 +3,3 @@
     <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
   <% } %>
 </nav>
-
-
-<nav id="mobile-nav">
-  <% for (var i in theme.menu) { %>
-    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
-  <% } %>
-  
-  <!-- Add the search widget -->
-  <%- partial('_widget/search') %>
-</nav>
