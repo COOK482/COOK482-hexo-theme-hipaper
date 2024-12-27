@@ -252,7 +252,7 @@ object {
 /* HEADER
 ----------------------------------------------- */
 .site-header {
-	padding: 40px 0 0;
+	padding: 40px 0 0 0;
 	}
 .site-branding {
 	float: left;
