@@ -1,12 +1,15 @@
 <nav id="mobile-nav">
+  <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% } %>
+</nav>
+
+
+<nav id="mobile-nav">
   <% for (var i in theme.menu) { %>
     <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
   <% } %>
   
   <!-- Add the search widget -->
-  <% if (theme.widgets.includes('search')) { %>
-    <div id="mobile-search" class="search-form" style="display: none;">
-      <%- partial('_widget/search') %>
-    </div>
-  <% } %>
+  <%- partial('_widget/search') %>
 </nav>
