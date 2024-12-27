@@ -1,5 +1,9 @@
 <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
   <% theme.widgets.forEach(function(widget){ %>
-    <%- partial('_widget/' + widget) %>
+    <% if (widget !== 'search') { %>
+      <%- partial('_widget/' + widget) %>
+    <% } %>
   <% }) %>
 </aside>
+
+<!-- search is moved from sidebar to header -->

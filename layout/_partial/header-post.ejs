@@ -55,7 +55,10 @@
             </div>
           </nav>
           
-          <%- partial('_widget/search') %>
+          <% if (theme.widgets.includes('search')) { %>
+            <%- partial('_widget/search') %>
+          <% } %>
+          <!-- search is moved from sidebar to header -->
 
       </div>
   </div>
