@@ -24,6 +24,7 @@ if (!hasCurrent) {
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js';
 script.onload = function () {
+	DarkReader.setFetchMethod(window.fetch);
 	DarkReader.auto({
 		brightness: 110,
 		contrast: 95
